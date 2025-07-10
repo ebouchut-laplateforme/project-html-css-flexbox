@@ -1,0 +1,19 @@
+main {
+  /*
+  * Layout its immediate children horizontally (when dir="ltr").
+  * Children wrap to the next row, if they do not fit on a row.
+  */
+  display:       flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap:     wrap;
+  gap:           0.5em;
+
+  background-color: #CCC;
+}
+
+main > section {
+  background-color: paleturquoise;
+  width:            200px;
+  height:           200px;
+}
