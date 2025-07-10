@@ -1,19 +1,58 @@
-main {
-  /*
-  * Layout its immediate children horizontally (when dir="ltr").
-  * Children wrap to the next row, if they do not fit on a row.
-  */
-  display:       flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap:     wrap;
-  gap:           0.5em;
+/* styles.css */
 
-  background-color: #CCC;
+/*
+ * ~~~~~~~~~~~~~~~~~~~~~~~
+ *  CSS Element Selectors
+ * ~~~~~~~~~~~~~~~~~~~~~~~
+ * Use Cases: Set color, font-size, text alignment
+ */
+
+body {
+  background-color: #373636;
+}
+
+
+main {
+  border:           0.2em dashed white;
+
+  background-color: black;
+}
+
+h1 {
+  text-align:       center;
+  color:            white;
 }
 
 main > section {
-  background-color: paleturquoise;
-  width:            200px;
-  height:           200px;
+  background-color: #E3BB3F;
+}
+
+/*
+ * ~~~~~~~~~~~~~~~~~~~~~~
+ *  CSS Class Selectors
+ * ~~~~~~~~~~~~~~~~~~~~~~
+ * Use Case: Mainly layout), size
+ */
+
+.small-square {
+  width:         100px;
+  height:        100px;
+}
+
+.big-square {
+  width:         600px;
+  height:        600px;
+}
+
+.flex-container {
+  margin:        auto; /* Center within its parent (*/
+
+  display:       flex; /* Layout its direct children (flex items) horizontally */
+  flex-wrap:     wrap; /* Wrap the flex items that does not fit on a row  */
+
+  gap:           0.2em; /* Add a gutter between the flex items */
+}
+
+.flex-item {
+  border-radius: 10%;
 }
